@@ -1,0 +1,264 @@
+/* Font Hebrew
+font-family: 'Secular One', sans-serif;
+font-family: 'Arimo', sans-serif;
+font-family: 'Suez One', serif;
+ */
+
+ /* Font English
+ font-family: 'Ma Shan Zheng', cursive;
+ font-family: 'Acme', sans-serif;
+ font-family: 'Righteous', cursive; */
+
+ @import url('https://fonts.googleapis.com/css?family=Acme|Ma+Shan+Zheng|Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Arimo|Secular+One|Suez+One&display=swap');
+
+body {
+  background-color: rgba(255, 174, 208, 0.3);
+  font-family: 'Suez One', serif;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.container img {
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+
+
+.title {
+  font-family: 'Suez One', serif;
+  font-size: 3em;
+  border-bottom: 2px solid pink;
+  border-left: 2px solid pink;
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 4px 4px 5px #888888;
+transition: width 2s;
+margin-bottom: 20px;
+}
+
+.title:hover {
+width: 80%;
+background-color: rgba(42, 165, 218, 0.5);
+border: none;
+}
+
+/* Personal */
+
+.personal {
+  position: relative;
+}
+
+.personal img {
+opacity: 0.8;
+}
+
+.personal h1 {
+  position: absolute;
+    top: 140px;
+    left: 20;
+    width: 100%;
+    background-color: rgba(149, 255, 255, 0.1);
+    color: #FC0F0F;
+    padding-left: 140px;
+
+ }
+
+ .personal span {
+     color: #211387;
+}
+
+.personal h1:hover {
+  color: #D63A69;
+}
+
+  /* About */
+
+ .about {
+   position: relative;
+ }
+
+ .about h1 {
+   position: absolute;
+   text-align: center;
+   top: 40px;
+   width: 100%;
+   background-color: rgba(149, 255, 255, 0.0);
+   color: rgba(46, 49, 49, 1);
+   text-shadow: 1px 1px 1px rgba(0,0,0,1);
+ }
+
+ .about h1:hover {
+   color: #D63A69;
+ }
+
+
+ /* FAQ */
+
+ .faq {
+   position: relative;
+ }
+
+ .faq h1 {
+   position: absolute;
+     top: 20px;
+     padding-left: 20px;
+     width: 70%;
+     background-color: rgba(149, 255, 255, 0.4);
+     color: rgba(46, 49, 49, 1);
+ }
+
+ .faq h1:hover {
+   color: #D63A69;
+ }
+
+
+ /* Testimonial */
+
+ .testimonial {
+   position: relative;
+ }
+
+ .testimonial h1 {
+   position: absolute;
+     top: 20px;
+     text-align: center;
+     width: 100%;
+     letter-spacing: 0.5px;
+     background-color: rgba(254, 241, 96, 0.4)
+ }
+
+ .testimonial h1:hover {
+   color: #D63A69;
+ }
+
+/* Diet */
+
+.diet {
+  position: relative;
+}
+
+.diet span {
+  position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 50%;
+    background-color: rgba(254, 241, 96, 0.2);
+    font-size: 2em;
+}
+
+.diet span:hover {
+  color: #D63A69;
+}
+
+/* Contact */
+
+.contact {
+  position: relative;
+}
+
+.contact h1 {
+  position: absolute;
+    top: 50px;
+    text-align: center;
+    width: 100%;
+    color: #FCE5E5;
+    text-shadow: 3px 3px 3px rgba(0,0,0,1);
+}
+
+.contact h1:hover {
+  color: #D63A69;
+}
+
+/* Social Bar On side */
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 18px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.instagram {
+  background:  radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: white;
+}
+
+.whatsapp {
+  background: rgba(37, 211, 102, 1);
+  color: white;
+}
+
+/* Footer Navbar */
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a green background color to the active link */
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the navbar on small screens */
+.navbar .icon {
+  display: none;
+}
+
+a#coupon {
+  font-family: 'Acme', sans-serif;
+  border: 2px dashed tomato;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  background-color: rgba(255,215,0 ,0.7);
+}
+
+
+/* Media Query */
